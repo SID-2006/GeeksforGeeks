@@ -1,0 +1,525 @@
+.navul{
+    font-size: 20px;
+    font-weight: 500;
+}
+body {
+  font-family: 'Inter', sans-serif;
+  cursor: url('photos/cursor8.png'), auto;
+}
+#openapp{
+    border-radius: 50px;
+    background-color: black;
+    color: white;
+    font-weight: 600;
+    size: 20px;
+    padding-top: 8px;
+    padding-right: 24px;
+    padding-bottom: 8px;
+    padding-left: 24px;
+    margin-right: 10px;
+    line-height: 100%;
+    letter-spacing: 0%;
+    width: 145px;
+    height: 30px;
+    cursor: pointer;
+    transition:border-color 0.3s;
+}
+#openapp:hover{
+    border-color: #07f32b;
+    box-shadow:2px 2px 2px #07f32b;
+}
+#cta{
+    border-radius: 74px;
+    background-color:#F0F0F0 ;
+    height: 30px;
+    width: 575px;
+    padding-top: 10px;
+    /* padding-bottom: 10px; */
+    padding-right: 20px;
+    padding-left: 20px;
+    margin: 16px;
+    margin-left: 160px;
+    gap: 36px;
+    margin-top: 50px;
+}
+.hero{
+    font-weight: 400;
+    font-size: 16px;
+    color: #616161;
+    transition: transform color 0.3s ease;
+}
+.hero:hover{
+    color: blue;
+}
+#pygd{
+    font-weight: 600;
+    font-size: 60px;
+    margin-left: 160px;
+}
+#pygd2{
+    color: #636161;
+    margin-left: 160px;
+    font-size: 32px;
+    font-weight: 500;
+    margin-top: 20px;
+}
+#getstarted{
+    font-size: 26px;
+    font-weight: 400;
+    border-radius: 74px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 40px;
+    padding-right: 40px;
+    background-color: #DDDDDD;
+    color: black;
+      cursor: url('photos/cursor9.png'),auto;
+    transition: transform 0.3s ease;
+}
+.container{
+    display:grid;
+    grid-template-columns: repeat(2, 1fr);
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 25px;
+    max-width: 700px;
+    width: 100%;
+    margin-top: 75px;
+    margin-left: 300px;
+}
+.card{
+    background-color: #FAFAFA;
+    text-align: left ;
+    box-sizing: border-box;
+    overflow: hidden;
+    position: relative;
+    border-radius: 16px;
+    height: 300px;
+    width: 500px;
+}
+.card img {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 300px;
+    height: 200px;
+    
+}
+.card div{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    padding: 16px;
+}
+.cardtext1{
+    font-weight: 600;
+    font-size: 38px;
+}
+.cardtext2{
+    font-weight: 600;
+    font-size: 15px;
+    color: #636363;
+}
+#pyhack{
+    display: inline-block;
+    margin-left: 150px;
+    color: #636161;
+    font-size: 32px;
+    font-weight: 500;
+    margin-top: 20px;
+}
+#learnmore{
+    margin-left: 150px;
+    font-weight: 400;
+    font-size: 16px;
+    color: #636363;
+    transition:color 0.3s ease;
+}
+#learnmore:hover{
+    color: blue;
+}
+.bento-container{
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-template-rows: auto auto;
+    gap: 20px;
+    max-width: 1000px;
+    width: 100%;
+    margin-left: 150px;
+    margin-top: 80px;
+}
+#frame-bl{
+    width: 650px;
+    border-radius: 20px;
+    height: 455px;
+}
+.bento-card-right{
+    border-radius: 20px;
+    animation: appear1 linear;
+    animation-timeline: view();
+    animation-range: entry 0% cover 43%;
+}
+#vectorimg{
+    margin-top: 33px;
+    height: 150px;
+    width: 430px;
+    position: relative;      
+}
+.faq{
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 50px;
+}
+.faqans{
+    transition: max-height 1s ease-out; 
+    overflow: hidden;
+    max-height: 0;
+    transition: max-height 0.5s ease-in;
+}
+.faqopen[open] .faqans{
+    max-height: 200px;
+
+}
+.faqopen{
+    position: relative;
+}
+.faqboxes{
+    width: 680px; 
+    margin-top: 12px; 
+    background-color: #FAFAFA;
+    border-radius: 12px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 30px;
+    padding-right: 30px;
+    cursor: pointer;
+}
+.faqboxes:hover{
+    background-color: #b9b9b9;
+}
+.summary{
+    font-size: 22px;
+    font-weight: 500;
+    list-style: none;
+    position: relative;
+}
+.summary::after {
+    content: '+';
+    position: absolute;
+    right: 20px; 
+    top: 50%; 
+    transform: translateY(-50%); 
+    font-size: 1.3em;
+    color: #008AFF; 
+    font-weight: 100;
+    transition: transform 0.2s ease;
+}
+.faqopen[open] .summary::after {
+    transform: translateY(-50%) rotate(45deg); 
+}
+.footers{
+    margin-left: 150px;
+    margin-top: 200px;
+    background-color: #F7F7F6;
+    margin-right: 220px;
+    border-radius: 20px;
+}
+.fin{
+    margin-left: 60px;
+    display: flex;
+}
+.heading{
+    font-weight: 500;
+    font-size: 16px;
+    display: inline-block;
+    padding-bottom: 10px;
+}
+.content{
+    color: #8F8E8E;
+    font-size: 14px;
+    font-weight: 400;
+    display: inline-block;
+    padding-top: 10px;
+}
+.fd{
+    padding-top: 40px;
+    padding-left: 70px;
+}
+#lfd{
+    padding-left: 50px;
+}
+.hanime{
+    transition: transform 0.3s ease, color 0.3s ease;
+    display: inline-block;
+    color: black;
+}
+.hanime:hover{
+    transform: scale(1.2);
+    color: #07ec29;
+}
+#getstarted:hover{
+    transform: scale(1.1);
+}
+@keyframes appear1{
+    from{
+        opacity: 0;
+        transform: translate(200px);
+    }
+    to{
+        opacity: 1;
+        transform: translate(0px);
+    }
+}
+@keyframes appear2{
+    from{
+        opacity: 0;
+        transform: translate(-200px);
+    }
+    to{
+        opacity: 1;
+        transform: translate(0px);
+    }
+}
+
+.a1{
+    animation: appear2 linear;
+    animation-timeline: view();
+    animation-range: entry 0% cover 43%;
+}
+@keyframes autoshow{
+    from{
+        opacity: 0;
+        transform: translateY(200px) scale(0.3);
+    }
+    to{
+        opacity: 1;
+        transform: translateY(0) scale(1);
+    }
+}
+.animeinabpyh{
+    animation: slidein2 linear;
+    animation-timeline: view();
+    animation-range: entry 0% cover 45%;
+}
+.animeinfaq1{
+    animation: slidein linear;
+    animation-timeline: view();
+    animation-range: entry 0% cover 40%;
+}
+.animeinfaq2{
+    animation: slidein linear;
+    animation-timeline: view();
+    animation-range: entry 5% cover 40%;
+}
+.animeinfaq3{
+    animation: slidein linear;
+    animation-timeline: view();
+    animation-range: entry 10% cover 40%;
+}
+.animeinfaq4{
+    animation: slidein linear;
+    animation-timeline: view();
+    animation-range: entry 15% cover 40%;
+}
+.animeinfaq5{
+    animation: slidein linear;
+    animation-timeline: view();
+    animation-range: entry 20% cover 30%;
+}
+
+@keyframes slidein{
+    from {
+    transform: translateX(100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+@keyframes slidein2{
+    from {
+    transform: translateX(-100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+.animeinpygd{
+  opacity: 0;
+  transform: scale(0);
+  animation: fadeIn 1s ease forwards;
+}
+
+
+@keyframes fadeIn {
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+#cta{
+  opacity: 0;
+  transform: scale(0);
+  animation: fadeIn 1s ease forwards;
+}
+.animeinwf{
+    animation: slidein2 linear;
+    animation-timeline: view();
+    animation-range: entry 0% cover 45%;  
+}
+.card1{
+    animation: appear2 linear;
+    animation-timeline: view();
+    animation-range: entry 0% cover 43%;
+}
+.card3{
+    animation: appear2 linear;
+    animation-timeline: view();
+    animation-range: entry 0% cover 30%;
+}
+.card2{
+    animation: appear1 linear;
+    animation-timeline: view();
+    animation-range: entry 0% cover 43%;
+}
+.card4{
+    animation: appear1 linear;
+    animation-timeline: view();
+    animation-range: entry 0% cover 30%;
+}
+.card1,.card2,.card3,.card4{
+    cursor: pointer;
+    transition: border-color 0.3s;
+}
+.card1:hover,.card2:hover,.card3:hover,.card4:hover{
+    border-color: #07ec29;
+    box-shadow:2px 2px 2px #07f32b; 
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+@keyframes foot{
+    from {
+    transform: translateY(100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+.footers{
+    animation: foot linear;
+    animation-timeline: view();
+    animation-range: entry 0% cover 30%;
+}
+.pop{
+    width: 1300px;
+    height: 600px;
+    display: flex;
+}
+.popin{
+    height: 500px;
+    transition: transform 0.3s ease;
+    display:block;
+    
+}
+.popin:hover{
+    transform: translateY(-30px);
+}
+
+/* to make the website responsive for any device */
+@media (max-width: 1024px) {
+    .container {
+        margin-left: 50px;
+        grid-template-columns: 1fr;
+    }
+
+    .bento-container {
+        grid-template-columns: 1fr;
+        margin-left: 20px;
+    }
+
+    .faq {
+        grid-template-columns: 1fr;
+        margin-left: 20px;
+    }
+
+    .footers {
+        flex-direction: column;
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+
+    .fin {
+        flex-direction: column;
+        align-items: start;
+    }
+
+    .fd {
+        padding-left: 0;
+        padding-top: 20px;
+    }
+
+    .faqboxes {
+        width: auto;
+    }
+
+    .card {
+        width: 90%;
+        height: auto;
+    }
+
+    .card img {
+        width: 100%;
+        height: auto;
+        position: relative;
+    }
+
+    .card div {
+        position: relative;
+    }
+
+    #pygd, #pygd2, #learnmore, #pyhack {
+        margin-left: 20px;
+    }
+
+    #cta {
+        margin-left: 20px;
+        width: auto;
+        flex-direction: column;
+    }
+
+    header div {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    nav ul {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    #openapp {
+        width: auto;
+        height: auto;
+    }
+
+    img[style*="width: 1127px"] {
+        width: 100% !important;
+    }
+
+    img[style*="width: 1049.3px"] {
+        width: 90% !important;
+    }
+
+    img[style*="width: 972px"] {
+        width: 80% !important;
+    }
+}
